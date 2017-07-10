@@ -1,15 +1,16 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#"
-     xml:base="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68"
+<rdf:RDF xmlns="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#"
+     xml:base="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:PlacingOntology="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology">
         <rdfs:comment>Legend:
 
 In Individuals:
@@ -51,98 +52,72 @@ W: stands for Watch</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#NotDetectedIn -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasBeenDetectedNear -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#NotDetectedIn">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Person"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Room"/>
-        <rdfs:comment>Remove from Protege and solve this in java domain</rdfs:comment>
-        <rdfs:comment>person NotDetectedIn Room</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#NotHere -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#NotHere"/>
-    
-
-
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasBeenDetectedNear -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasBeenDetectedNear">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasBeenDetectedNear">
         <rdfs:comment>Person hasBeenDetectedNear Furniture
 (Note: No postural change, sitting or lying or something)</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasDetected -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasDetected -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasDetected">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasDetected">
         <rdfs:comment>Relating Person to isBeingIn</rdfs:comment>
         <rdfs:comment>Relating Person to some GestureActivity</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasFurniture -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasFurniture -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasFurniture">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasFurniture">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isFurnitureOf"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Ambient"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Furniture"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isFurnitureOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Ambient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
         <rdfs:comment>Ambient hasFurniture some Furniture</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasFurnitureTheSensor -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasFurnitureTheSensor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasFurnitureTheSensor">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSensorWithTheFurniture"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasFurnitureTheSensor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSensorWithTheFurniture"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasPart -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasRoom -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasPart">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isPartOf"/>
-        <rdfs:comment>Remove it, seems unnessasary</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasRoom -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasRoom">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasRoom">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isRoomOf"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Ambient"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Room"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isRoomOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Ambient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Room"/>
         <rdfs:comment>An Ambient instance hasRoom some instance of Room</rdfs:comment>
         <rdfs:comment>The Ambient(House) has some Room</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasRoomTheSensor -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasRoomTheSensor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasRoomTheSensor">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasRoomTheSensor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSensorInRoom"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSensorInRoom"/>
         <rdfs:comment>Room hasRoomTheSensor Sensor</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isBeingIn -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isBeingIn -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isBeingIn">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Person"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Room"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isBeingIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Room"/>
         <rdfs:comment>An instance of Person isBeingIn an instance of a Room</rdfs:comment>
         <rdfs:comment>Can be derived from various sensors (PIR, Elico system)</rdfs:comment>
         <rdfs:comment>User isBeingIn some Room/Area</rdfs:comment>
@@ -150,37 +125,37 @@ W: stands for Watch</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isDoingGesture -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isDoingGesture -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isDoingGesture">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Person"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#GestureSensor"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isDoingGesture">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#GestureSensor"/>
         <rdfs:comment>Person isDoingGesture Gesture</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isFurnitureOf -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isFurnitureOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isFurnitureOf">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isFurnitureOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:comment>Some Furniture isFurnitureOf some Room</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isOccupying -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isOccupying -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isOccupying">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isOccupying">
         <rdfs:comment>An instance of a Person isOccupying some instance of Furniture</rdfs:comment>
         <rdfs:comment>User Occupying a Furniture with sitting(Postural Change)</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isPartOf -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isPartOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isPartOf">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isPartOf">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:comment>Remove it, seems unnessasry
 
@@ -193,61 +168,61 @@ Room isPartOf Ambient</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isRoomOf -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isRoomOf -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isRoomOf">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isRoomOf">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:comment>Ambient is Located in Ambient</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSensorInRoom -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSensorInRoom -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSensorInRoom">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSensorInRoom">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSensorWithTheFurniture -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSensorWithTheFurniture -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSensorWithTheFurniture"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSensorWithTheFurniture"/>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSensorWithThePerson -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSensorWithThePerson -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSensorWithThePerson">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isWithSensor"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSensorWithThePerson">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isWithSensor"/>
         <rdfs:comment>Instance_of_Elicon/Watch isSensorWithThePerson Instance_Of_Person</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSpaceNearTo -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSpaceNearTo -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSpaceNearTo">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSpaceNearTo">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Room"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Room"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Room"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Room"/>
         <rdfs:comment>Area/Room isNearTo Area/Room</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isUsing -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isUsing -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isUsing">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isUsing">
         <rdfs:comment>user isUsing a Furniture</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isWithSensor -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isWithSensor -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isWithSensor">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isWithSensor">
         <rdfs:comment>Instance_of_person isWithSensor instance_of_Elicon/Watch</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -264,76 +239,76 @@ Room isPartOf Ambient</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasBrightnessValue -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasBrightnessValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasBrightnessValue">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasBrightnessValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Brightness"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Brightness"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasElicoAxisXValue -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasElicoAxisXValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasElicoAxisXValue">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasElicoAxisXValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#ElicoAxisX"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#ElicoAxisX"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasElicoAxisYValue -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasElicoAxisYValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasElicoAxisYValue">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasElicoAxisYValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#ElicoAxisY"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#ElicoAxisY"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasElicoAxisZValue -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasElicoAxisZValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasElicoAxisZValue">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasElicoAxisZValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#ElicoAxisZ"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#ElicoAxisZ"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasHeartRateValue -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasHeartRateValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasHeartRateValue">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasHeartRateValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#HeartRate"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#HeartRate"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasMotionValue -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasMotionValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasMotionValue">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasMotionValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Motion"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Motion"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasTemperatureValue -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasTemperatureValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasTemperatureValue">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasTemperatureValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Temprature"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Temprature"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasTypeTimeStamp -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasTypeTimeStamp -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasTypeTimeStamp">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasTypeTimeStamp">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdfs:domain>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasTypeTimeStamp"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasTypeTimeStamp"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
             </owl:Restriction>
@@ -343,65 +318,65 @@ Room isPartOf Ambient</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isDrinkingValue -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isDrinkingValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isDrinkingValue">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isDrinkingValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Drinking"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Drinking"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isFallingDownValue -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isFallingDownValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isFallingDownValue">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isFallingDownValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#FallingDown"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#FallingDown"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isLyingDownValue -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isLyingDownValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isLyingDownValue">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isLyingDownValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#LyingDown"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#LyingDown"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isPouringValue -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isPouringValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isPouringValue">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isPouringValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Pouring"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Pouring"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSittingDownValue -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSittingDownValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSittingDownValue">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSittingDownValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#SittingDown"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#SittingDown"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSittingUpValue -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSittingUpValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSittingUpValue">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSittingUpValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#SittingUp"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#SittingUp"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isWalkingValue -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isWalkingValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isWalkingValue">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isWalkingValue">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Walking"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Walking"/>
     </owl:DatatypeProperty>
     
 
@@ -417,179 +392,179 @@ Room isPartOf Ambient</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Ambient -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Ambient -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Ambient"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Ambient"/>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Brightness -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Brightness -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Brightness">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Brightness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Drinking -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Drinking -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Drinking">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#GestureSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Drinking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#GestureSensor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#ElicoAxisX -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#ElicoAxisX -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#ElicoAxisX">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#ElicoAxisX">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#ElicoAxisY -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#ElicoAxisY -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#ElicoAxisY">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#ElicoAxisY">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#ElicoAxisZ -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#ElicoAxisZ -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#ElicoAxisZ">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#ElicoAxisZ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#FallingDown -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#FallingDown -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#FallingDown">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#GestureSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#FallingDown">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#GestureSensor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Furniture -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Furniture">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Ambient"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Room"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Ambient"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Room"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#GestureSensor -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#GestureSensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#GestureSensor">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#GestureSensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#HeartRate -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#HeartRate -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#HeartRate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#HeartRate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#LyingDown -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#LyingDown -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#LyingDown">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#GestureSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#LyingDown">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#GestureSensor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Motion -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Motion -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Motion">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Motion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Person -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Person -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Person"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Person"/>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Pouring -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Pouring -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Pouring">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#GestureSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Pouring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#GestureSensor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#PredefinedOntology -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#PredefinedOntology -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#PredefinedOntology"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#PredefinedOntology"/>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#PrimitiveDataType -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#PrimitiveDataType -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#PrimitiveDataType">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#PredefinedOntology"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#PrimitiveDataType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#PredefinedOntology"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Room -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Room -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Room">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Ambient"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Room">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Ambient"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#SittingDown -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#SittingDown -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#SittingDown">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#GestureSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#SittingDown">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#GestureSensor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#SittingUp -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#SittingUp -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#SittingUp">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#GestureSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#SittingUp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#GestureSensor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Temprature -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Temprature -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Temprature">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Temprature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#TimeInstance -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#TimeInstance -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#TimeInstance">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#PrimitiveDataType"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#TimeInstance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#PrimitiveDataType"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Walking -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Walking -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Walking">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#GestureSensor"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Walking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#GestureSensor"/>
     </owl:Class>
     
 
@@ -605,206 +580,206 @@ Room isPartOf Ambient</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_F_Bed -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_Bed -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_F_Bed">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Furniture"/>
-        <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionBed"/>
-        <isFurnitureOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_House"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_Bed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
+        <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionBed"/>
+        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_F_KitchenCabinet -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_KitchenCabinet -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_F_KitchenCabinet">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Furniture"/>
-        <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionKitchenCabinet"/>
-        <isFurnitureOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_House"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_KitchenCabinet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
+        <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionKitchenCabinet"/>
+        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House"/>
         <rdfs:comment>Experimenting with isPartOf .. more axioms .. will they increase computation time ? 
 If yes, then probably remove this &apos;isPartOf&apos; Object property</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_F_KitchenSinkOrHeat -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_KitchenSinkOrHeat -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_F_KitchenSinkOrHeat">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Furniture"/>
-        <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionKitchenSinkOrHeat"/>
-        <isFurnitureOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_House"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_KitchenSinkOrHeat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
+        <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionKitchenSinkOrHeat"/>
+        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House"/>
         <rdfs:comment>Experimenting with isPartOf .. more axioms .. will they increase computation time ? 
 If yes, then probably remove this &apos;isPartOf&apos; Object property</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_F_Shower -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_Shower -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_F_Shower">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Furniture"/>
-        <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionShower"/>
-        <isFurnitureOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_House"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_Shower">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
+        <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionShower"/>
+        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_F_TV -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_TV -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_F_TV">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Furniture"/>
-        <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_BrightnessTV"/>
-        <isFurnitureOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_House"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_TV">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
+        <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_BrightnessTV"/>
+        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_F_TVCouch -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_TVCouch -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_F_TVCouch">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Furniture"/>
-        <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionLivingRoom"/>
-        <isFurnitureOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_House"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_TVCouch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
+        <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionLivingRoom"/>
+        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_F_Table -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_Table -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_F_Table">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Furniture"/>
-        <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionTable"/>
-        <isFurnitureOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_House"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_Table">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
+        <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionTable"/>
+        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_F_TableX -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_TableX -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_F_TableX">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Furniture"/>
-        <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionTableX"/>
-        <isFurnitureOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_House"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_TableX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
+        <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionTableX"/>
+        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_F_ToiletSeat -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_ToiletSeat -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_F_ToiletSeat">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Furniture"/>
-        <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionBathRoom"/>
-        <isFurnitureOf rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_House"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_ToiletSeat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
+        <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionBathRoom"/>
+        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_House -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_House">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Ambient"/>
-        <hasRoom rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_BathRoom"/>
-        <hasRoom rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_BedRoom"/>
-        <hasRoom rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_CorridorArea"/>
-        <hasRoom rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_Kitchen"/>
-        <hasRoom rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_LivingRoom"/>
-        <hasRoom rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_TableArea"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Ambient"/>
+        <hasRoom rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_BathRoom"/>
+        <hasRoom rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_BedRoom"/>
+        <hasRoom rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_CorridorArea"/>
+        <hasRoom rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_Kitchen"/>
+        <hasRoom rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_LivingRoom"/>
+        <hasRoom rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_TableArea"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_BathRoom -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_BathRoom -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_BathRoom">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Room"/>
-        <isSpaceNearTo rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_BedRoom"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_BathRoom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Room"/>
+        <isSpaceNearTo rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_BedRoom"/>
         <rdfs:comment>isNearTo sensors and furniture and room.. need to be done ?</rdfs:comment>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_BedRoom -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_BedRoom -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_BedRoom">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Room"/>
-        <isSpaceNearTo rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_CorridorArea"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_BedRoom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Room"/>
+        <isSpaceNearTo rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_CorridorArea"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_CorridorArea -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_CorridorArea -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_CorridorArea">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Room"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_CorridorArea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Room"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_Kitchen -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_Kitchen -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_Kitchen">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Room"/>
-        <isSpaceNearTo rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_CorridorArea"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_Kitchen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Room"/>
+        <isSpaceNearTo rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_CorridorArea"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_LivingRoom -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_LivingRoom -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_LivingRoom">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Room"/>
-        <isSpaceNearTo rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_CorridorArea"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_LivingRoom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Room"/>
+        <isSpaceNearTo rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_CorridorArea"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_TableArea -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_TableArea -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_TableArea">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Room"/>
-        <isSpaceNearTo rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_CorridorArea"/>
-        <isSpaceNearTo rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_Kitchen"/>
-        <isSpaceNearTo rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_LivingRoom"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_TableArea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Room"/>
+        <isSpaceNearTo rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_CorridorArea"/>
+        <isSpaceNearTo rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_Kitchen"/>
+        <isSpaceNearTo rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_LivingRoom"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#P_Habitant_1 -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#P_Habitant_1 -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#P_Habitant_1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Person"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#P_Habitant_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Person"/>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_BrightnessTV -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_BrightnessTV -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_BrightnessTV">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Brightness"/>
-        <isSensorInRoom rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_LivingRoom"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_BrightnessTV">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Brightness"/>
+        <isSensorInRoom rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_LivingRoom"/>
         <hasBrightnessValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</hasBrightnessValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_E_AxisX -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_E_AxisX -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_E_AxisX"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_E_AxisX"/>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_E_AxisY -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_E_AxisY -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_E_AxisY"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_E_AxisY"/>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_E_AxisZ -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_E_AxisZ -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_E_AxisZ">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#ElicoAxisZ"/>
-        <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#P_Habitant_1"/>
-        <hasElicoAxisZValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</hasElicoAxisZValue>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_E_AxisZ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#ElicoAxisZ"/>
+        <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#P_Habitant_1"/>
+        <hasElicoAxisZValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</hasElicoAxisZValue>
         <hasTypeTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1496756760</hasTypeTimeStamp>
         <rdfs:comment>For Example:
 Value above 10 means person standing
@@ -816,173 +791,173 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionBathRoom -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionBathRoom -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionBathRoom">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Motion"/>
-        <isSensorInRoom rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_BathRoom"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionBathRoom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Motion"/>
+        <isSensorInRoom rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_BathRoom"/>
         <hasMotionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasMotionValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionBed -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionBed -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionBed">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Motion"/>
-        <isSensorInRoom rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_BedRoom"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionBed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Motion"/>
+        <isSensorInRoom rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_BedRoom"/>
         <hasMotionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasMotionValue>
         <hasTypeTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1496756760</hasTypeTimeStamp>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionKitchen -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionKitchen -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionKitchen">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Motion"/>
-        <isSensorInRoom rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_Kitchen"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionKitchen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Motion"/>
+        <isSensorInRoom rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_Kitchen"/>
         <hasMotionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasMotionValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionKitchenCabinet -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionKitchenCabinet -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionKitchenCabinet">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Motion"/>
-        <isSensorInRoom rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_Kitchen"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionKitchenCabinet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Motion"/>
+        <isSensorInRoom rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_Kitchen"/>
         <hasMotionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasMotionValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionKitchenSinkOrHeat -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionKitchenSinkOrHeat -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionKitchenSinkOrHeat">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Motion"/>
-        <isSensorInRoom rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_Kitchen"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionKitchenSinkOrHeat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Motion"/>
+        <isSensorInRoom rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_Kitchen"/>
         <hasMotionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasMotionValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionLivingRoom -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionLivingRoom -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionLivingRoom">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Motion"/>
-        <isSensorInRoom rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_LivingRoom"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionLivingRoom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Motion"/>
+        <isSensorInRoom rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_LivingRoom"/>
         <hasMotionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasMotionValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionShower -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionShower -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionShower">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Motion"/>
-        <isSensorInRoom rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_BathRoom"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionShower">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Motion"/>
+        <isSensorInRoom rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_BathRoom"/>
         <hasMotionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasMotionValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionTable -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionTable -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionTable">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Motion"/>
-        <isSensorInRoom rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_TableArea"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionTable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Motion"/>
+        <isSensorInRoom rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_TableArea"/>
         <hasMotionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasMotionValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionTableX -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionTableX -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_MotionTableX">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Motion"/>
-        <isSensorInRoom rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_TableArea"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionTableX">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Motion"/>
+        <isSensorInRoom rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_TableArea"/>
         <hasMotionValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasMotionValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_W_Drink -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_W_Drink -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_W_Drink">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Drinking"/>
-        <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#P_Habitant_1"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_W_Drink">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Drinking"/>
+        <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#P_Habitant_1"/>
         <isDrinkingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDrinkingValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_W_FallingDown -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_W_FallingDown -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_W_FallingDown">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#FallingDown"/>
-        <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#P_Habitant_1"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_W_FallingDown">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#FallingDown"/>
+        <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#P_Habitant_1"/>
         <isFallingDownValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isFallingDownValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_W_HeartRate -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_W_HeartRate -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_W_HeartRate">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#HeartRate"/>
-        <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#P_Habitant_1"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_W_HeartRate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#HeartRate"/>
+        <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#P_Habitant_1"/>
         <hasHeartRateValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</hasHeartRateValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_W_LyingDown -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_W_LyingDown -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_W_LyingDown">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#LyingDown"/>
-        <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#P_Habitant_1"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_W_LyingDown">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#LyingDown"/>
+        <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#P_Habitant_1"/>
         <isLyingDownValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLyingDownValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_W_Pour -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_W_Pour -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_W_Pour">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Pouring"/>
-        <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#P_Habitant_1"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_W_Pour">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Pouring"/>
+        <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#P_Habitant_1"/>
         <isPouringValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isPouringValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_W_SittingDown -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_W_SittingDown -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_W_SittingDown">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#SittingDown"/>
-        <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#P_Habitant_1"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_W_SittingDown">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#SittingDown"/>
+        <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#P_Habitant_1"/>
         <hasTypeTimeStamp rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1496756760</hasTypeTimeStamp>
         <isSittingDownValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSittingDownValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_W_SittingUp -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_W_SittingUp -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_W_SittingUp">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#SittingUp"/>
-        <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#P_Habitant_1"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_W_SittingUp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#SittingUp"/>
+        <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#P_Habitant_1"/>
         <isSittingUpValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSittingUpValue>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_W_Walk -->
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_W_Walk -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#S_W_Walk">
-        <rdf:type rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Walking"/>
-        <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#P_Habitant_1"/>
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_W_Walk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Walking"/>
+        <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#P_Habitant_1"/>
         <isWalkingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isWalkingValue>
     </owl:NamedIndividual>
     
@@ -999,34 +974,34 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Ambient"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Person"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Ambient"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Brightness"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#ElicoAxisX"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#ElicoAxisY"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#ElicoAxisZ"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#GestureSensor"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#HeartRate"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Motion"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Temprature"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Brightness"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#ElicoAxisX"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#ElicoAxisY"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#ElicoAxisZ"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#GestureSensor"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#HeartRate"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Motion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Temprature"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Drinking"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#FallingDown"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#LyingDown"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Pouring"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#SittingDown"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#SittingUp"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Walking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Drinking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#FallingDown"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#LyingDown"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Pouring"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#SittingDown"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#SittingUp"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Walking"/>
         </owl:members>
     </rdf:Description>
     
@@ -1040,36 +1015,200 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#f">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#axisz">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#valuez">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#sit">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#value">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#sitGest">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#d">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#r">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_BedRoom"/>
     <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#a">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#f">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#axisz">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#valuez">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#sitGest">
+    <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#d">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#value">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#d">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UserBeingInARoom</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasMotionValue"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSensorInRoom"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#a"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isBeingIn"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#a"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pouring</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isDoingGesturePour</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isPouringValue"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#d"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#value"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Person"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#value"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isDoingGesture"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#d"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
@@ -1082,7 +1221,7 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Person"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Person"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
                     </rdf:Description>
                 </rdf:first>
@@ -1092,7 +1231,7 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
                                 <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
                             </rdf:Description>
                         </rdf:first>
@@ -1101,10 +1240,21 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSittingDownValue"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#d"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#value"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#value"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1112,21 +1262,10 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
-                                                <swrl:arguments>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#value"/>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</rdf:first>
-                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </swrl:arguments>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSittingDownValue"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#d"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#value"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1144,89 +1283,7 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isDoingGesture"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#d"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SittingUp</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isDoingGestureSittingUp</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Person"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSittingUpValue"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#d"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#value"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
-                                                <swrl:arguments>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#value"/>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</rdf:first>
-                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </swrl:arguments>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isDoingGesture"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isDoingGesture"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#d"/>
                     </rdf:Description>
@@ -1245,9 +1302,10 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Person"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isWalkingValue"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#d"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#value"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1256,8 +1314,8 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Person"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1265,10 +1323,9 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isWalkingValue"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#d"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#value"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1308,251 +1365,9 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isDoingGesture"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isDoingGesture"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#d"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temporary Manual style</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NotDetectedIn</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Person"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isBeingIn"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_BedRoom"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#NotDetectedIn"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_LivingRoom"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#NotDetectedIn"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_BathRoom"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#NotDetectedIn"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_Kitchen"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#NotDetectedIn"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_TableArea"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                                <rdf:first>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#NotDetectedIn"/>
-                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_CorridorArea"/>
-                                                    </rdf:Description>
-                                                </rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">test_delete</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NotHere</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Person"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isBeingIn"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_BedRoom"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Room"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#r"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#notEqual"/>
-                                                <swrl:arguments rdf:parseType="Collection">
-                                                    <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#r"/>
-                                                    <rdf:Description rdf:about="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#A_R_BedRoom"/>
-                                                </swrl:arguments>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#NotHere"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#r"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UserBeingInARoom</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSensorInRoom"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#a"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasMotionValue"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
-                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Person"/>
-                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isBeingIn"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#a"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1570,9 +1385,9 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSensorWithTheFurniture"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#f"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSensorWithTheFurniture"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#s"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#f"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1581,9 +1396,9 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasMotionValue"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
-                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasElicoAxisZValue"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#axisz"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#valuez"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1591,10 +1406,9 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasElicoAxisZValue"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#axisz"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#valuez"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Person"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#p"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1602,21 +1416,9 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-                                                <swrl:arguments>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#valuez"/>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</rdf:first>
-                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </swrl:arguments>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#s"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -1624,9 +1426,10 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                 <rdf:first>
                                                     <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
-                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasMotionValue"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#s"/>
+                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -1634,12 +1437,37 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                         <rdf:first>
                                                             <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Person"/>
-                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                                <swrl:arguments>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#valuez"/>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </swrl:arguments>
                                                             </rdf:Description>
                                                         </rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                                <rdf:first>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSittingDownValue"/>
+                                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#sit"/>
+                                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</swrl:argument2>
+                                                                    </rdf:Description>
+                                                                </rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
                                                     </rdf:Description>
                                                 </rdf:rest>
                                             </rdf:Description>
@@ -1658,9 +1486,9 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasBeenDetectedNear"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#f"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasBeenDetectedNear"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#f"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1678,9 +1506,9 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSensorWithTheFurniture"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#f"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSensorWithTheFurniture"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#s"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#f"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1689,9 +1517,9 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasMotionValue"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
-                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasElicoAxisZValue"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#axisz"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#valuez"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1699,10 +1527,9 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasElicoAxisZValue"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#axisz"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#valuez"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Person"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#p"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1710,21 +1537,9 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
-                                                <swrl:arguments>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#valuez"/>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</rdf:first>
-                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </swrl:arguments>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#s"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -1732,9 +1547,10 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                 <rdf:first>
                                                     <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
-                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasMotionValue"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#s"/>
+                                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -1742,9 +1558,21 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                                         <rdf:first>
                                                             <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Person"/>
-                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThanOrEqual"/>
+                                                                <swrl:arguments>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#valuez"/>
+                                                                        <rdf:rest>
+                                                                            <rdf:Description>
+                                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</rdf:first>
+                                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                            </rdf:Description>
+                                                                        </rdf:rest>
+                                                                    </rdf:Description>
+                                                                </swrl:arguments>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1766,9 +1594,9 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isOccupying"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#f"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isOccupying"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#f"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1785,10 +1613,21 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSensorWithTheFurniture"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#f"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
+                        <swrl:arguments>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#value"/>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </swrl:arguments>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1796,10 +1635,10 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                         <rdf:first>
                             <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#hasMotionValue"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
-                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSensorWithTheFurniture"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#s"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#f"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1808,9 +1647,9 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isSittingDownValue"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#sitGest"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#value"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasMotionValue"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#s"/>
+                                        <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl:argument2>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1818,21 +1657,10 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                         <rdf:first>
                                             <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#equal"/>
-                                                <swrl:arguments>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#value"/>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</rdf:first>
-                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </swrl:arguments>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSittingDownValue"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#sitGest"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#value"/>
                                             </rdf:Description>
                                         </rdf:first>
                                         <rdf:rest>
@@ -1841,8 +1669,8 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                                 <rdf:first>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
-                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#s"/>
                                                     </rdf:Description>
                                                 </rdf:first>
                                                 <rdf:rest>
@@ -1851,8 +1679,8 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                                         <rdf:first>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Person"/>
-                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
+                                                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Person"/>
+                                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#p"/>
                                                             </rdf:Description>
                                                         </rdf:first>
                                                         <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1874,9 +1702,9 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isOccupying"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#f"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isOccupying"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#f"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1893,9 +1721,10 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                 <rdf:first>
                     <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Person"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isDrinkingValue"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#d"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#value"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1904,8 +1733,8 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Person"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#p"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1913,10 +1742,9 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
                                 <rdf:first>
                                     <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isDrinkingValue"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#d"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#value"/>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#s"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -1929,7 +1757,7 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                                 <swrl:arguments>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#value"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#value"/>
                                                         <rdf:rest>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
@@ -1956,9 +1784,9 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isDoingGesture"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#d"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isDoingGesture"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#d"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -1967,8 +1795,8 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
     </rdf:Description>
     <rdf:Description>
         <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pouring</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isDoingGesturePour</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SittingUp</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">isDoingGestureSittingUp</rdfs:label>
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
         <swrl:body>
             <rdf:Description>
@@ -1976,8 +1804,8 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Person"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Person"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#p"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest>
@@ -1986,8 +1814,8 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#Sensor"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#s"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#s"/>
                             </rdf:Description>
                         </rdf:first>
                         <rdf:rest>
@@ -1996,9 +1824,9 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                 <rdf:first>
                                     <rdf:Description>
                                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isPouringValue"/>
-                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#d"/>
-                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#value"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSittingUpValue"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#d"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#value"/>
                                     </rdf:Description>
                                 </rdf:first>
                                 <rdf:rest>
@@ -2011,7 +1839,7 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                                                 <swrl:arguments>
                                                     <rdf:Description>
                                                         <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#value"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#value"/>
                                                         <rdf:rest>
                                                             <rdf:Description>
                                                                 <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
@@ -2038,9 +1866,9 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#isDoingGesture"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#p"/>
-                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/yushakareem/ontologies/2017/4/untitled-ontology-68#d"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isDoingGesture"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#p"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#d"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -2051,5 +1879,5 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
 
 
 
-<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
