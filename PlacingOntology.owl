@@ -56,17 +56,10 @@ V: stands for virtual</rdfs:comment>
     <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasBeenDetectedNear -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasBeenDetectedNear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
         <rdfs:comment>Person hasBeenDetectedNear Furniture
 (Note: No postural change, sitting or lying or something)</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasDetected -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasDetected">
-        <rdfs:comment>Relating Person to isBeingIn</rdfs:comment>
-        <rdfs:comment>Relating Person to some GestureActivity</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -76,9 +69,9 @@ V: stands for virtual</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasFurniture">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isFurnitureOf"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Ambient"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Room"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
-        <rdfs:comment>Ambient hasFurniture some Furniture</rdfs:comment>
+        <rdfs:comment>Room &apos;hasFurniture&apos; Furniture</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -87,6 +80,8 @@ V: stands for virtual</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasFurnitureTheSensor">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSensorWithTheFurniture"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
     </owl:ObjectProperty>
     
 
@@ -109,6 +104,8 @@ V: stands for virtual</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#hasRoomTheSensor">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isSensorInRoom"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Room"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
         <rdfs:comment>Room hasRoomTheSensor Sensor</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -148,23 +145,10 @@ V: stands for virtual</rdfs:comment>
     <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isOccupying -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isOccupying">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
         <rdfs:comment>An instance of a Person isOccupying some instance of Furniture</rdfs:comment>
         <rdfs:comment>User Occupying a Furniture with sitting(Postural Change)</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isPartOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isPartOf">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <rdfs:comment>Remove it, seems unnessasry
-
-Example:
-Transitive Behaviour
-
-Furniture isPartOf Room
-Room isPartOf Ambient</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -213,17 +197,11 @@ Room isPartOf Ambient</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isUsing -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isUsing">
-        <rdfs:comment>user isUsing a Furniture</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isWithSensor -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isWithSensor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Sensor"/>
         <rdfs:comment>Instance_of_person isWithSensor instance_of_Elicon/Watch</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -376,7 +354,7 @@ Room isPartOf Ambient</rdfs:comment>
     <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isStandingValue -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#isStandingValue">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Standing"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#VirtualGesture"/>
     </owl:DatatypeProperty>
     
 
@@ -560,17 +538,6 @@ From - Lying position to Sitting position</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Standing -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Standing">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#GestureSense"/>
-        <rdfs:comment>Is an inference (from SWRL) based virtual sensor:
-
-If not in Sitting position or Lying position then system considers that the person is standing</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Temprature -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Temprature">
@@ -583,6 +550,17 @@ If not in Sitting position or Lying position then system considers that the pers
 
     <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#TimeInstance">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#PrimitiveDataType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#VirtualGesture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#VirtualGesture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#GestureSense"/>
+        <rdfs:comment>Is an inference (from SWRL) based virtual sensor:
+
+If not in Sitting position or Lying position then system considers that the person is standing</rdfs:comment>
     </owl:Class>
     
 
@@ -611,7 +589,7 @@ If not in Sitting position or Lying position then system considers that the pers
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_Bed">
         <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
         <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionBed"/>
-        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House"/>
+        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_BedRoom"/>
     </owl:NamedIndividual>
     
 
@@ -621,7 +599,7 @@ If not in Sitting position or Lying position then system considers that the pers
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_KitchenCabinet">
         <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
         <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionKitchenCabinet"/>
-        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House"/>
+        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_Kitchen"/>
         <rdfs:comment>Experimenting with isPartOf .. more axioms .. will they increase computation time ? 
 If yes, then probably remove this &apos;isPartOf&apos; Object property</rdfs:comment>
     </owl:NamedIndividual>
@@ -633,7 +611,7 @@ If yes, then probably remove this &apos;isPartOf&apos; Object property</rdfs:com
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_KitchenSinkOrHeat">
         <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
         <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionKitchenSinkOrHeat"/>
-        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House"/>
+        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_Kitchen"/>
         <rdfs:comment>Experimenting with isPartOf .. more axioms .. will they increase computation time ? 
 If yes, then probably remove this &apos;isPartOf&apos; Object property</rdfs:comment>
     </owl:NamedIndividual>
@@ -645,7 +623,7 @@ If yes, then probably remove this &apos;isPartOf&apos; Object property</rdfs:com
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_Shower">
         <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
         <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionShower"/>
-        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House"/>
+        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_BathRoom"/>
     </owl:NamedIndividual>
     
 
@@ -655,7 +633,7 @@ If yes, then probably remove this &apos;isPartOf&apos; Object property</rdfs:com
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_TV">
         <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
         <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_BrightnessTV"/>
-        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House"/>
+        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_LivingRoom"/>
     </owl:NamedIndividual>
     
 
@@ -665,7 +643,7 @@ If yes, then probably remove this &apos;isPartOf&apos; Object property</rdfs:com
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_TVCouch">
         <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
         <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionLivingRoom"/>
-        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House"/>
+        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_LivingRoom"/>
     </owl:NamedIndividual>
     
 
@@ -675,7 +653,7 @@ If yes, then probably remove this &apos;isPartOf&apos; Object property</rdfs:com
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_Table">
         <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
         <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionTable"/>
-        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House"/>
+        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_TableArea"/>
     </owl:NamedIndividual>
     
 
@@ -685,7 +663,7 @@ If yes, then probably remove this &apos;isPartOf&apos; Object property</rdfs:com
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_TableX">
         <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
         <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionTableX"/>
-        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House"/>
+        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_TableArea"/>
     </owl:NamedIndividual>
     
 
@@ -695,7 +673,7 @@ If yes, then probably remove this &apos;isPartOf&apos; Object property</rdfs:com
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_F_ToiletSeat">
         <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Furniture"/>
         <hasFurnitureTheSensor rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_MotionBathRoom"/>
-        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_House"/>
+        <isFurnitureOf rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#A_R_BathRoom"/>
     </owl:NamedIndividual>
     
 
@@ -952,6 +930,7 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
         <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#LyingDown"/>
         <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#P_Habitant_1"/>
         <isLyingDownValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isLyingDownValue>
+        <rdfs:comment>For now this individual does not have influence on Person &apos;isOccupying&apos; Furniture</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -983,6 +962,7 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
         <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#SittingUp"/>
         <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#P_Habitant_1"/>
         <isSittingUpValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isSittingUpValue>
+        <rdfs:comment>For now this individual does not have influence on Person &apos;isOccupying&apos; Furniture</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -990,8 +970,14 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
     <!-- http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_W_V_Standing -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#S_W_V_Standing">
-        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Standing"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#VirtualGesture"/>
         <isSensorWithThePerson rdf:resource="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#P_Habitant_1"/>
+        <rdfs:comment>Be careful here. 
+Might give a problem later on.
+
+The type called &apos;VirtualSensor&apos;
+
+If errors in the future: Perhaps this might be the source.</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -1044,7 +1030,7 @@ For Couch and TableSitting its useful but not for Bed(Out of Elicon coverage Are
             <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Pouring"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#SittingDown"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#SittingUp"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Standing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#VirtualGesture"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/emaroLab/YushaKareem/PlacingOntology#Walking"/>
         </owl:members>
     </rdf:Description>
